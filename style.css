@@ -1,0 +1,296 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    background:lightgoldenrodyellow;
+}
+.nab{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: center;
+}
+.nab li{
+    list-style: none;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 19px;
+}
+.nab li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(to bottom, #87CEEB, #4DA6FF);;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Cloud Shape */
+.cloud {
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    background: #fff;
+    border-radius: 100px;
+}
+
+
+.cloud::before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 50px;
+    top: -20px;
+    left: 20px;
+
+}
+
+.cloud::after {
+    content: "";
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    width: 70px;
+    height: 60px;
+    top: -35px;
+    right: 20px;
+}
+
+/* Cloud 1 */
+.c1{
+    top:100px;
+    left:-250px;
+    animation:c1move 20s linear infinite;
+}
+
+/* Cloud 2 */
+.c2{
+    top:140px;
+    left:-450px;
+    animation:c2move 25s linear infinite;
+}
+
+/* Cloud 3 */
+.c3{
+    top:190px;
+    left:-650px;
+    animation:c3move 30s linear infinite;
+}
+
+@keyframes c1move{
+    from{left:-250px;}
+    to{left:100%;}
+}
+
+@keyframes c2move{
+    from{left:-450px;}
+    to{left:100%;}
+}
+
+@keyframes c3move{
+    from{left:-650px;}
+    to{left:100%;}
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -60px;
+}
+.ok i {
+    font-size: 100px;
+}
+.ok h1{
+    color: white;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding:5px;
+    text-align: center;
+    font-weight: 700;
+}
+.ok p{
+    color: #F8FAFC;
+    font-size: 1.5rem;
+}
+.get{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background:black;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-top: 25px;
+    transition: 0.3s;
+    background: black;
+    border: 1px solid white;
+}
+.get:hover{
+    color: white;
+    background:goldenrod;
+}
+.abal{
+    width: 100%;
+    height: 60vh;
+    background:whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+.con{
+    margin-top: 70px;
+    padding: 20px;
+}
+.abal h1{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+.abal p{   
+    max-width: 600px;
+    font-size: 20px;
+    text-align: justify;
+    padding: 10px;
+    gap: 10px;
+}
+.container{
+    background: #F8FAFC;
+    width: 100%;
+    height: 150vh
+}
+/*laptop screen choto korle dhuke jai tai responsive kora */
+@media(max-width:991px){
+    .container{
+        width: 100%;
+        height: 380vh;
+    }
+}
+.container h1{
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+.my{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+.pic {
+    width: 400px;
+    height: 360px;
+    gap: 10px;
+    background: #87CEEB;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+.pic img{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+}
+.pic h3{
+    color: black;
+    font-size: 21px;
+    text-align: center;
+    padding: 5px;
+}
+.pic h4{
+    color:black;
+    font-size: 16px;
+    text-align: center;
+}
+.book{
+    display: inline-block;
+    text-decoration: none;
+    background: whitesmoke;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 20px;
+    color: black
+}
+.hero h2{
+    font-size: 3.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color:whitesmoke;
+}
+.ban{
+    width: 100%;
+    height: 93vh;
+    background:gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    align-items: center;
+    
+}
+
+.ban h1{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: whitesmoke;
+    padding: 20px;
+}
+.input-box{
+    width: 800px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    background:rgba(255,255,255,0.6)
+}
+.massage1{
+    width: 800px;
+    height: 300px;
+    border-radius: 10px;
+    text-align: center;
+    background:rgba(255,255,255,0.6)
+}
+.massage{
+    display: inline-block;
+    background: dodgerblue;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #F8FAFC;
+    border: 1px solid black;
+    margin-top: 10px;
+    padding: 10px;
+}
+.massage:hover{
+    background:rgba(255,255,255,0.6);
+    color: black;
+}
+.foot{
+    background: wheat;
+    padding: 20px;
+    text-align: center;
+}
+.foot{
+    text-align: center;
+}
+.foot h5{
+    font-size: 23px;
+}
